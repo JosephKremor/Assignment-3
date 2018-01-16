@@ -62,4 +62,5 @@ Data_subset = copy(All_Data)[,paste(setdiff(colnames(All_Data),keep_cols)):=NULL
 # Calculate the mean of each column by class# 
 Mean_data = Data_subset[,lapply(.SD,mean),by=Class,.SDcols=setdiff(colnames(Data_subset),'Class')]
 
+# Save the mean of each column by class
 write.table(Mean_data,'mean_data.txt',row.names = FALSE)
