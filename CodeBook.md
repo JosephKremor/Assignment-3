@@ -68,4 +68,6 @@ tBodyGyroJerkMean <br />
 Reference: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
 
 ### Transformations
-The test and training sets were merged to form a combined data set.
+The test_Data and train_Data coumns were labelled with the features variable. The activity class is denoted by the Class column which was generated via a merging of the activity labels variable and the test_labels vairable for test_Data and a merging of the activity labels variable and the train_labels vairable for train_Data. All_Data is then created by appending test_Data to train_Data. which is then saved as tidy_data.rds.
+
+All in All_Data columns are then removed  Class and the columns that contain mean() or std() and this is assigned the name Data_subset. Mean_data is a table that contains the means of each column according to the Class. Mean_data is saved as mean_data.txt.
