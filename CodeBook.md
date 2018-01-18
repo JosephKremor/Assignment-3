@@ -9,7 +9,7 @@ More information about the data can be found at the data source: http://archive.
 
 #### Features in the Data
 <blockquote>
-<h2>This description of the features has been taken directly from the data file available from: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</h2>
+<h2>This description of the features has been sourced from the data file which is available from: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</h2>
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -66,8 +66,9 @@ tBodyAccJerkMean <br />
 tBodyGyroMean <br />
 tBodyGyroJerkMean <br />
 
-Reference: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
 </blockquote>
+Reference: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
+
 
 ### Transformations
 The test_Data and train_Data coumns were labelled with the features variable. The activity class is denoted by the Class column which was generated via a merging of the activity labels variable and the test_labels vairable for test_Data and a merging of the activity labels variable and the train_labels vairable for train_Data. All_Data is then created by appending test_Data to train_Data. which is then saved as tidy_data.rds.
